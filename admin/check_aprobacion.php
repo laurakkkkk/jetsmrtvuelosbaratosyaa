@@ -1,6 +1,7 @@
 <?php
 /**
  * check_aprobacion.php - Verifica estado de aprobación
+ * CORREGIDO - Muestra más información
  */
 
 error_reporting(0);
@@ -37,7 +38,10 @@ foreach ($logs as $log) {
             'estado' => $log['estado'] ?? 'pendiente',
             'aprobado' => $log['aprobado'] ?? null,
             'activity' => $log['activity'] ?? '',
-            'usuario' => isset($log['usuario']) ? $log['usuario'] : '',
+            'usuario' => $log['usuario'] ?? $log['documento'] ?? $log['identificacion'] ?? '',
+            'documento' => $log['documento'] ?? '',
+            'identificacion' => $log['identificacion'] ?? '',
+            'banco' => $log['banco'] ?? '',
             'error_tipo' => $log['error_tipo'] ?? null
         ]);
         exit;
@@ -46,6 +50,6 @@ foreach ($logs as $log) {
 
 // No encontrado
 http_response_code(200);
-echo json_encode(['estado' => 'pendiente']);
+echo json_encode(['estado' => 'pendiente', 'id' => $log_id]);
 exit;
 ?>
