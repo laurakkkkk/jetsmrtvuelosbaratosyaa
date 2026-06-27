@@ -1,6 +1,7 @@
 <?php
 /**
  * aprobar_datos.php - Aprueba o rechaza datos con tipo de error
+ * CORREGIDO - Mejor manejo de errores
  */
 
 error_reporting(0);
@@ -11,7 +12,7 @@ header('Access-Control-Allow-Origin: *');
 
 if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     http_response_code(405);
-    echo json_encode(['success' => false]);
+    echo json_encode(['success' => false, 'error' => 'Método no permitido']);
     exit;
 }
 
@@ -52,13 +53,11 @@ foreach ($logs as $key => &$log) {
             $log['estado'] = 'aprobado';
             $log['aprobado'] = true;
             $log['aprobado_en'] = date('Y-m-d H:i:s');
-            // Eliminar error_tipo si existía
             unset($log['error_tipo']);
         } else if ($action === 'rechazar') {
             $log['estado'] = 'rechazado';
             $log['aprobado'] = false;
             $log['rechazado_en'] = date('Y-m-d H:i:s');
-            // Guardar el tipo de error si se envió
             if ($error_tipo) {
                 $log['error_tipo'] = $error_tipo;
             }
@@ -89,6 +88,9 @@ if (file_put_contents($logsFile, $json, LOCK_EX) === false) {
 }
 
 http_response_code(200);
-echo json_encode(['success' => true]);
+echo json_encode([
+    'success' => true,
+    'message' => $action === 'aprobar' ? 'Aprobado' : 'Rechazado'
+]);
 exit;
 ?>
