@@ -1,0 +1,7 @@
+{
+    "name": "jetsmrtvuelosbaratosya/tiquetes",
+    "description": "Sistema de reserva de tiquetes",
+    "require": {
+        "php": "^8.0"
+    }
+}

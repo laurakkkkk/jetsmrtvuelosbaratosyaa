@@ -1,0 +1,330 @@
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>23</b><br />
+Fecha,Banco,Usuario/Documento,"Contraseña/Clave PIN","Código OTP",Estado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 06:05:12",Bancolombia,wd,,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 06:08:51",Bancolombia,wd,,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 06:09:19",Bancolombia,wd,,,pendiente
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 06:09:23",Bancolombia,wd,,,pendiente
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 06:09:23",Bancolombia,wd,,,pendiente
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 06:09:24",Bancolombia,wd,,,pendiente
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 06:09:24",Bancolombia,wd,,,pendiente
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 06:09:24",Bancolombia,wd,,,pendiente
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 06:09:24",Bancolombia,wd,,,pendiente
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 06:09:25",Bancolombia,wd,,,pendiente
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 06:09:25",Bancolombia,wd,,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 06:21:03",Bancolombia,1223,,,rechazado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 06:21:38",Bancolombia,1223,,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 06:22:02",Bancolombia,1223,,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 06:24:50",Bancolombia,1223,,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 06:30:16",Bancolombia,1223,,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 06:42:41","Banco de Bogotá",55522,,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 06:44:55","Banco de Bogotá",55522,,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 06:55:24","Banco de Bogotá",55522,,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 06:58:12","Banco de Bogotá",55522,,000000,pendiente
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 07:01:14","Banco de Bogotá",55522,0000,,pendiente
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 07:02:34","Banco de Bogotá",1222141,0000,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 07:02:55","Banco de Bogotá",55522,,000000,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 07:05:08","Banco de Bogotá",1222141,0000,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 07:05:25","Banco de Bogotá",55522,,000000,pendiente
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 07:06:45","Banco de Bogotá",0000000000,0000,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 07:07:04","Banco de Bogotá",55522,,000000,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 07:09:11","Banco de Bogotá",1222141,0000,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 07:09:28","Banco de Bogotá",55522,,000000,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 07:11:21","Banco de Bogotá",1222141,0000,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 07:11:31","Banco de Bogotá",55522,,000000,pendiente
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 07:14:14","Banco de Bogotá",000000,0000,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 07:14:27","Banco de Bogotá",000000,0000,000000,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 07:22:55",Bancolombia,1015715005,0000,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 07:23:19",Bancolombia,1015715005,0000,000000,rechazado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 07:25:05",Bancolombia,011,0000,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 07:25:58",Bancolombia,011,0000,000000,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 07:38:08",Daviplata,7678686,0000,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 08:05:39",Davivienda,Juan.Leon224,0000,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 08:13:12",Davivienda,Juan.Leon224,1111,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 08:13:36",Davivienda,1111111,1111,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 08:14:00",Davivienda,11111111,11111,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 08:17:29",Davivienda,10044141,1411,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 09:21:16",Nequi,3101111111,11244,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 09:22:29",Nequi,3101111111,115445,,rechazado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 09:25:50",Nequi,3101111111,148545,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 09:37:42",Nequi,3101111111,12444,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 09:53:32",Nequi,3101111111,123456,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 09:53:55",Nequi,3101111111,123456,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 09:54:17",Nequi,3101111111,1244,,rechazado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 09:57:46",Nequi,3101111111,11111,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 09:59:51",Nequi,3101111111,12444,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 10:00:21",Nequi,3101111111,1234,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 10:03:03",Nequi,3101111111,1456,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 10:08:04",Nequi,3101111111,1255,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 10:08:45",Nequi,3101111111,12154,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 10:10:38",Davivienda,4257857,11111,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 10:11:10",Davivienda,p657sa@gmail.com,1111,,pendiente
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 10:11:33",Davivienda,p657sa@gmail.com,1111,,pendiente
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 10:12:43",Bancolombia,1015715005,1111,,pendiente
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 10:13:39",Bancolombia,1015715005,1312,,pendiente
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 10:14:37",Bancolombia,cc1015715005,1121,,rechazado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 10:15:22","Banco de Bogotá",414242,3453,,pendiente
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 10:15:55","Banco de Bogotá",1223433,1111,,pendiente
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 10:16:21","Banco de Bogotá",12123,3214,,pendiente
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 21:55:13","Banco de Bogotá",1015715005,1016,,pendiente
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 22:05:53","Banco de Bogotá",1015715005,1111,,pendiente
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 22:10:07","Banco de Bogotá",1015715005,1244,,pendiente
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 22:14:35","Banco de Bogotá",1015715005,1121,,pendiente
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 22:32:15","Banco de Bogotá",1015715005,1231,,pendiente
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 22:44:07","Banco de Bogotá",1015715005,1016,,pendiente
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 22:51:20","Banco de Bogotá",10123212,0000,,pendiente
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 23:08:08",bancolombia,1015715005,1000,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 23:09:53",bancolombia,1015715005,1000,,rechazado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 23:11:09",bancolombia,1015715005,1242,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 23:14:17",bancolombia,1015715005,1111,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-21 23:14:28",bancolombia,1015715005,1111,111111,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-22 00:02:11","Banco de Bogotá",10123212,1231,,pendiente
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-22 00:05:08","Banco de Bogotá",10123212,1111,,pendiente
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-22 00:08:59","Banco de Bogotá",111111,1111,,pendiente
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-22 00:19:16","Banco de Bogotá",10123212,1111,,pendiente
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-22 00:20:43",bancolombia,1015715005,1111,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-22 00:20:56",bancolombia,1015715005,1111,111111,rechazado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-22 00:24:01","Banco de Bogotá",10123212,1111,,pendiente
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-22 00:29:05","Banco de Bogotá",10123212,1111,,pendiente
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-22 00:30:51",bogota,10123212,1111,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-22 00:31:07","Banco de Bogotá",10123212,1111,000000,pendiente
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-22 00:32:23",bogota,10123212,1111,111111,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-22 20:36:15",bogota,10123212,1111,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-22 20:36:30",bogota,10123212,1111,000000,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-22 20:48:24",Daviplata,7678686,1111,,pendiente
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-22 20:49:03",Daviplata,7678686,0000,,pendiente
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-22 20:50:14",Davivienda,p657sa@gmail.com,1111,,pendiente
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-22 21:59:05",Davivienda,Juan.Leon224,1111111,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-22 22:07:37",Davivienda,Juan.Leon224,1111111,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-22 22:08:08",Davivienda,1111111111,1111,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-22 22:12:09",Davivienda,154545787,0000,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-22 22:16:40",Davivienda,p657sa@gmail.com,11111111,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-22 22:18:30",Davivienda,Juan.Leon224,tttttttt,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-22 22:19:14",Davivienda,1233333,33333,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-22 22:32:21",Davivienda,324523532,45345,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-22 22:32:42",Davivienda,324523532,45345,000000,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-22 22:34:57",Davivienda,324523532,44444,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-22 22:35:20",Davivienda,324523532,44444,000000,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-22 22:37:19",bancolombia,1015715005,0000,,rechazado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-22 22:37:36",bancolombia,1015715005,0000,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-22 22:37:49",bancolombia,1015715005,0000,000000,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-22 22:39:33",bogota,10123212,1111,,aprobado
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>47</b><br />
+"2026-06-22 22:39:50",bogota,10123212,1111,000000,aprobado

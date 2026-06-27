@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="24" viewBox="0 0 22 24">
+  <defs>
+    <clipPath id="clip-AV_red-logo">
+      <rect width="22" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="AV_red-logo" clip-path="url(#clip-AV_red-logo)">
+    <g id="Group_145" data-name="Group 145" transform="translate(0.255)">
+      <path id="Path_147" data-name="Path 147" d="M2.495,0a43.688,43.688,0,0,0,8.249,16.3s-7.127-.225-9.622-5.022A10.215,10.215,0,0,1,2.495,0Z" fill="#de0108" fill-rule="evenodd"/>
+      <path id="Path_148" data-name="Path 148" d="M13.066,18.753a23.443,23.443,0,0,0,8.423,5.174s-4.437.364-7.114-.909S8.912,19.6,7.188,19.455s-2.731-.24-3.19-.7Z" fill="#de0108" fill-rule="evenodd"/>
+      <path id="Path_149" data-name="Path 149" d="M17.034,18.955c-1.082-2.564-6.291-2.651-6.291-2.651s1.411,1.56,2.323,2.449A20.564,20.564,0,0,1,17.034,18.955Z" fill="#de0108" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>

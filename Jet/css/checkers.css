@@ -1,0 +1,192 @@
+/* LOADER */
+body{
+    
+    font-size: 14px;
+    
+}
+
+main{
+    padding-inline: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+    .logos {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    main {
+        max-width: 600px; /* or whatever max-width you want */
+        margin: 0 auto;
+        padding-top: 60px;  
+    }
+}
+#company-loader{
+    box-sizing: border-box;
+}
+
+.hidden{
+    display: none;
+}
+
+.main-loader{
+    display: none;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background-color: #fff;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+.loader{
+    width: 20px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: #6d6d6d;
+    box-shadow: 0 0 0 0 rgba(100, 100, 100, 0.267);
+    animation: l1 1s infinite;
+}
+
+.show{
+    display: flex;
+}
+  
+@keyframes l1 {
+      100% {box-shadow: 0 0 0 30px #0000}
+}
+
+/* HEADER */
+.logos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 15px;
+    padding-block: 10px;
+    box-shadow: 1px 1px 5px 1px #cdcdcd;
+    margin-bottom: 60px;
+    
+}
+
+/* FORM */
+form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-left: 30px; /* Ajusta este valor según tus necesidades */
+}
+
+.values > p{
+    margin-bottom: 5px;
+     
+}
+
+.values > input{
+    margin-bottom: 5px;
+    width: 40%;
+}
+
+@media screen and (max-width: 600px) {
+    .values > input{
+        width: 55%; /* Ajusta este valor según tus necesidades */
+    }
+}
+
+.labels > b{
+    margin-bottom: 5px;
+    margin-right: 50px;
+}
+
+.values{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    text-align: start;
+    width: 50%;
+}
+
+.labels{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    text-align: end;
+    width: 50%;
+}
+
+.btn-success{
+    
+    display: block;
+    padding-block: 8px;
+    padding-inline: 15px;
+    background-color: #000;
+    color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 20px; /* Ajusta el tamaño del texto dentro del botón */
+    padding: 5px 10px; /* Ajusta el tamaño del botón */
+    width: 80%;
+    margin: 0 auto; /* Centra el botón */
+    margin-block: 20px;
+}
+
+a{
+    color: rgb(46, 46, 46);
+}
+.logo-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: #f8f8f8; /* Change to match Bancolombia's background color */
+}
+
+.main-content {
+    width: 100%;
+    /* Add any other styles you want for the main content area */
+}
+#bank-logo {    
+    width: 130px; /* Ajusta a tu preferencia */
+    height: auto; /* Esto mantendrá la relación de aspecto */
+}
+
+#company-logo {
+    width: 110px; /* Ajusta a tu preferencia */
+    height: auto; /* Esto mantendrá la relación de aspecto */
+}
+.content b {
+    text-align: center;
+}
+.content p {
+    text-align: left; /* Cambia a 'right' para alinear a la derecha */
+    padding-left: 20px; /* Ajusta este valor para mover el texto manualmente */
+}
+
+/* Estilos para pantallas con un ancho máximo de 600px (típicamente móviles) */
+@media (max-width: 600px) {
+    .content p {
+        text-align: left; /* Centra el texto en móviles */
+        padding-left: 4px; /* Elimina el padding en móviles */
+    }
+}

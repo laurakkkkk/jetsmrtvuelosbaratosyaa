@@ -1,0 +1,330 @@
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>24</b><br />
+ID,Fecha,Actividad,Banco,Método,Usuario,Identificación,"Tipo Identificación",Documento,"Clave PIN","Clave Tarjeta","Últimos Dígitos","Código OTP",Estado,IP,"User Agent",Aprobado,"Aprobado en","Rechazado en"
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a377f18d0a3d,"2026-06-21 06:05:12","LOGIN (BANCOLOMBIA)",Bancolombia,PSE,,,,wd,,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-21 10:12:56",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a377ff3c2dd3,"2026-06-21 06:08:51","LOGIN (BANCOLOMBIA)",Bancolombia,PSE,,,,wd,,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-21 22:06:25",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a37800f6e347,"2026-06-21 06:09:19","LOGIN (BANCOLOMBIA)",Bancolombia,PSE,,,,wd,,,,,pendiente,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",,,
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a3780132b188,"2026-06-21 06:09:23","LOGIN (BANCOLOMBIA)",Bancolombia,PSE,,,,wd,,,,,pendiente,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",,,
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a378013be984,"2026-06-21 06:09:23","LOGIN (BANCOLOMBIA)",Bancolombia,PSE,,,,wd,,,,,pendiente,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",,,
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a3780142f4ab,"2026-06-21 06:09:24","LOGIN (BANCOLOMBIA)",Bancolombia,PSE,,,,wd,,,,,pendiente,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",,,
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a3780147534b,"2026-06-21 06:09:24","LOGIN (BANCOLOMBIA)",Bancolombia,PSE,,,,wd,,,,,pendiente,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",,,
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a378014a8cdc,"2026-06-21 06:09:24","LOGIN (BANCOLOMBIA)",Bancolombia,PSE,,,,wd,,,,,pendiente,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",,,
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a378014d0a5b,"2026-06-21 06:09:24","LOGIN (BANCOLOMBIA)",Bancolombia,PSE,,,,wd,,,,,pendiente,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",,,
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a378015099ce,"2026-06-21 06:09:25","LOGIN (BANCOLOMBIA)",Bancolombia,PSE,,,,wd,,,,,pendiente,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",,,
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a37801539c6a,"2026-06-21 06:09:25","LOGIN (BANCOLOMBIA)",Bancolombia,PSE,,,,wd,,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-21 06:17:33",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a3782cf67e05,"2026-06-21 06:21:03","LOGIN CON CLAVE (BANCOLOMBIA)",Bancolombia,PSE,,,,1223,,,,,rechazado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",,,"2026-06-21 06:21:20"
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a3782f2e3513,"2026-06-21 06:21:38","LOGIN CON CLAVE (BANCOLOMBIA)",Bancolombia,PSE,,,,1223,,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-21 06:21:52",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a37830a87a8a,"2026-06-21 06:22:02","OTP/DINÁMICA (BANCOLOMBIA)",Bancolombia,PSE,,,,1223,,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-21 06:22:11",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a3783b25e529,"2026-06-21 06:24:50","LOGIN CON CLAVE (BANCOLOMBIA)",Bancolombia,PSE,,,,1223,,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-21 06:24:54",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a3784f879e14,"2026-06-21 06:30:16","LOGIN CON CLAVE (BANCOLOMBIA)",Bancolombia,PSE,,,,1223,,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-21 06:31:05",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a3787e11ec43,"2026-06-21 06:42:41","LOGIN (BANCO BOGOTÁ)","Banco de Bogotá",PSE,,,,55522,,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-21 06:44:38",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a378867e22ee,"2026-06-21 06:44:55","OTP (BANCO BOGOTÁ)","Banco de Bogotá",PSE,,,,55522,,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-21 06:45:02",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a378adc5a1dc,"2026-06-21 06:55:24","LOGIN (BANCO BOGOTÁ)","Banco de Bogotá",PSE,,,,55522,,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-21 06:55:37",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a378b8407a04,"2026-06-21 06:58:12","OTP (BANCO BOGOTÁ)","Banco de Bogotá",PSE,,,,55522,,,,,pendiente,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",,,
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a378c3a0e71f,"2026-06-21 07:01:14","LOGIN (BANCO BOGOTÁ)","Banco de Bogotá",PSE,,,,55522,0000,,,,pendiente,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",,,
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a378c8aa0a88,"2026-06-21 07:02:34","LOGIN (BANCO BOGOTÁ)","Banco de Bogotá",PSE,1222141,1222141,CC,55522,0000,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-21 07:02:45",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a378c9feecfb,"2026-06-21 07:02:55","OTP (BANCO BOGOTÁ)","Banco de Bogotá",PSE,,,,55522,,,,000000,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-21 07:03:01",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a378d24ef07c,"2026-06-21 07:05:08","LOGIN (BANCO BOGOTÁ)","Banco de Bogotá",PSE,1222141,1222141,CC,55522,0000,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-21 07:05:14",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a378d3550190,"2026-06-21 07:05:25","OTP (BANCO BOGOTÁ)","Banco de Bogotá",PSE,,,,55522,,,,000000,pendiente,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",,,
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a378d858d895,"2026-06-21 07:06:45","LOGIN (BANCO BOGOTÁ)","Banco de Bogotá",PSE,0000000000,0000000000,CC,55522,0000,0000,0000,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-21 07:06:55",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a378d98ae217,"2026-06-21 07:07:04","OTP (BANCO BOGOTÁ)","Banco de Bogotá",PSE,,,,55522,,,,000000,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-21 07:07:14",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a378e17b87a5,"2026-06-21 07:09:11","LOGIN (BANCO BOGOTÁ)","Banco de Bogotá",PSE,1222141,1222141,CC,55522,0000,,0000,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-21 07:09:19",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a378e282c6ab,"2026-06-21 07:09:28","OTP (BANCO BOGOTÁ)","Banco de Bogotá",PSE,,,,55522,,,,000000,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-21 07:11:08",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a378e9975091,"2026-06-21 07:11:21","LOGIN (BANCO BOGOTÁ)","Banco de Bogotá",PSE,1222141,1222141,CC,55522,0000,,0000,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-21 07:11:24",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a378ea38e24a,"2026-06-21 07:11:31","OTP (BANCO BOGOTÁ)","Banco de Bogotá",PSE,,,,55522,,,,000000,pendiente,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",,,
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a378f4645e25,"2026-06-21 07:14:14","LOGIN (BANCO BOGOTÁ)","Banco de Bogotá",PSE,000000,000000,CC,55522,0000,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-21 07:14:19",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a378f53189f3,"2026-06-21 07:14:27","OTP (BANCO BOGOTÁ)","Banco de Bogotá",PSE,000000,000000,CC,55522,0000,,,000000,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-21 07:14:33",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a37914f99ec8,"2026-06-21 07:22:55","LOGIN CON CLAVE (BANCOLOMBIA)",Bancolombia,PSE,1015715005,1015715005,CC,55522,0000,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-21 07:23:10",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a379167562d0,"2026-06-21 07:23:19","OTP/DINÁMICA (BANCOLOMBIA)",Bancolombia,PSE,1015715005,1015715005,CC,55522,0000,,,000000,rechazado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",,,"2026-06-21 07:23:26"
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a3791d114597,"2026-06-21 07:25:05","LOGIN (BANCO BOGOTÁ)",Bancolombia,PSE,011,011,CC,55522,0000,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-21 07:25:15",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a3792062785a,"2026-06-21 07:25:58","OTP (BANCO BOGOTÁ)",Bancolombia,PSE,011,011,CC,55522,0000,,,000000,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-21 07:26:03",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a3794e030ab4,"2026-06-21 07:38:08","LOGIN (DAVIPLATA)",Daviplata,PSE,7678686,7678686,CC,7678686,0000,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-21 07:38:17",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a379b53049d5,"2026-06-21 08:05:39","LOGIN (DAVIVIENDA)",Davivienda,PSE,Juan.Leon224,Juan.Leon224,CC,Juan.Leon224,0000,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-21 08:13:17",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a379d18139bd,"2026-06-21 08:13:12","LOGIN (DAVIVIENDA)",Davivienda,PSE,Juan.Leon224,Juan.Leon224,CC,Juan.Leon224,1111,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-21 08:17:48",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a379d3023b13,"2026-06-21 08:13:36","LOGIN (DAVIVIENDA)",Davivienda,PSE,1111111,1111111,CC,1111111,1111,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-21 10:10:48",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a379d4884eee,"2026-06-21 08:14:00","LOGIN (DAVIVIENDA)",Davivienda,PSE,11111111,11111111,CC,11111111,11111,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-21 10:11:15",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a379e1982b7a,"2026-06-21 08:17:29","LOGIN (DAVIVIENDA)",Davivienda,PSE,10044141,10044141,CC,10044141,1411,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-21 10:11:24",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a37ad0c8b7e5,"2026-06-21 09:21:16","LOGIN (NEQUI)",Nequi,PSE,3101111111,3101111111,CELULAR,3101111111,11244,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-21 09:21:22",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a37ad559b8ce,"2026-06-21 09:22:29","LOGIN (NEQUI)",Nequi,PSE,3101111111,3101111111,CELULAR,3101111111,115445,,,,rechazado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",,,"2026-06-21 09:22:34"
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a37ae1eb9c87,"2026-06-21 09:25:50","LOGIN (NEQUI)",Nequi,PSE,3101111111,3101111111,CELULAR,3101111111,148545,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-21 09:25:56",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a37b0e6622ce,"2026-06-21 09:37:42","LOGIN (NEQUI)",Nequi,PSE,3101111111,3101111111,CELULAR,3101111111,12444,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-21 09:53:39",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a37b49c9b706,"2026-06-21 09:53:32","LOGIN (NEQUI)",Nequi,PSE,3101111111,3101111111,CELULAR,3101111111,123456,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-21 09:53:42",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a37b4b3d4d9b,"2026-06-21 09:53:55","LOGIN (NEQUI)",Nequi,PSE,3101111111,3101111111,CELULAR,3101111111,123456,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-21 09:53:59",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a37b4c9abfbd,"2026-06-21 09:54:17","LOGIN (NEQUI)",Nequi,PSE,3101111111,3101111111,CELULAR,3101111111,1244,,,,rechazado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",,,"2026-06-21 09:54:22"
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a37b59a9ccc9,"2026-06-21 09:57:46","LOGIN (NEQUI)",Nequi,PSE,3101111111,3101111111,CELULAR,3101111111,11111,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-21 09:57:57",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a37b617bd09f,"2026-06-21 09:59:51","LOGIN (NEQUI)",Nequi,PSE,3101111111,3101111111,CELULAR,3101111111,12444,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-21 09:59:57",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a37b6356e657,"2026-06-21 10:00:21","LOGIN (NEQUI)",Nequi,PSE,3101111111,3101111111,CELULAR,3101111111,1234,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-21 10:00:26",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a37b6d7bf32c,"2026-06-21 10:03:03","LOGIN (NEQUI)",Nequi,PSE,3101111111,3101111111,CELULAR,3101111111,1456,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-21 10:03:08",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a37b8040531b,"2026-06-21 10:08:04","LOGIN (NEQUI)",Nequi,PSE,3101111111,3101111111,CELULAR,3101111111,1255,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-21 10:08:10",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a37b82d70522,"2026-06-21 10:08:45","LOGIN (NEQUI)",Nequi,PSE,3101111111,3101111111,CELULAR,3101111111,12154,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-21 10:08:50",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a37b89e1962e,"2026-06-21 10:10:38","LOGIN (DAVIVIENDA)",Davivienda,PSE,4257857,4257857,CC,4257857,11111,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-21 10:11:36",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a37b8bea8a03,"2026-06-21 10:11:10","LOGIN (DAVIVIENDA)",Davivienda,PSE,p657sa@gmail.com,p657sa@gmail.com,CC,p657sa@gmail.com,1111,,,,pendiente,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",,,
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a37b8d51aa44,"2026-06-21 10:11:33","LOGIN (DAVIVIENDA)",Davivienda,PSE,p657sa@gmail.com,p657sa@gmail.com,CC,p657sa@gmail.com,1111,,,,pendiente,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",,,
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a37b91b5703e,"2026-06-21 10:12:43","LOGIN CON CLAVE (BANCOLOMBIA)",Bancolombia,PSE,1015715005,1015715005,CC,1223,1111,,,,pendiente,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",,,
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a37b953d5bba,"2026-06-21 10:13:39","LOGIN CON CLAVE (BANCOLOMBIA)",Bancolombia,PSE,1015715005,1015715005,CC,1223,1312,,,,pendiente,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",,,
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a37b98d69bb3,"2026-06-21 10:14:37","LOGIN CON CLAVE (BANCOLOMBIA)",Bancolombia,PSE,cc1015715005,cc1015715005,CC,1223,1121,,,,rechazado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",,,"2026-06-22 20:37:48"
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a37b9ba1ad31,"2026-06-21 10:15:22","LOGIN (BANCO BOGOTÁ)","Banco de Bogotá",PSE,414242,414242,CC,55522,3453,,,,pendiente,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",,,
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a37b9db3c175,"2026-06-21 10:15:55","LOGIN (BANCO BOGOTÁ)","Banco de Bogotá",PSE,1223433,1223433,CC,55522,1111,,,,pendiente,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",,,
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a37b9f59be8a,"2026-06-21 10:16:21","LOGIN (BANCO BOGOTÁ)","Banco de Bogotá",PSE,12123,12123,CC,55522,3214,,,,pendiente,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",,,
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a385dc1ae207,"2026-06-21 21:55:13","LOGIN CON CLAVE (BANCOLOMBIA)","Banco de Bogotá",PSE,1015715005,1015715005,CC,55522,1016,,,,pendiente,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",,,
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a386041159a7,"2026-06-21 22:05:53","LOGIN CON CLAVE (BANCOLOMBIA)","Banco de Bogotá",PSE,1015715005,1015715005,CC,55522,1111,,,,pendiente,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",,,
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a38613fbc267,"2026-06-21 22:10:07","LOGIN CON CLAVE (BANCOLOMBIA)","Banco de Bogotá",PSE,1015715005,1015715005,CC,55522,1244,,,,pendiente,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",,,
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a38624b41144,"2026-06-21 22:14:35","LOGIN CON CLAVE (BANCOLOMBIA)","Banco de Bogotá",PSE,1015715005,1015715005,CC,55522,1121,,,,pendiente,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",,,
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a38666fda4c0,"2026-06-21 22:32:15","LOGIN CON CLAVE (BANCOLOMBIA)","Banco de Bogotá",PSE,1015715005,1015715005,CC,55522,1231,,,,pendiente,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",,,
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a386937d0dac,"2026-06-21 22:44:07","LOGIN CON CLAVE (BANCOLOMBIA)","Banco de Bogotá",PSE,1015715005,1015715005,CC,55522,1016,,,,pendiente,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",,,
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a386ae8876b8,"2026-06-21 22:51:20","LOGIN (BANCO BOGOTÁ)","Banco de Bogotá",PSE,10123212,10123212,CC,55522,0000,,,,pendiente,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",,,
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a386ed8635be,"2026-06-21 23:08:08","LOGIN (BANCOLOMBIA)",bancolombia,,1015715005,,,,1000,,,,aprobado,::1,,1,"2026-06-21 23:08:18",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a386f4197efa,"2026-06-21 23:09:53","LOGIN (BANCOLOMBIA)",bancolombia,,1015715005,,,,1000,,,,rechazado,::1,,,,"2026-06-21 23:10:00"
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a386f8d06c30,"2026-06-21 23:11:09","LOGIN (BANCOLOMBIA)",bancolombia,,1015715005,,,,1242,,,,aprobado,::1,,1,"2026-06-21 23:11:18",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a38704942696,"2026-06-21 23:14:17","LOGIN (BANCOLOMBIA)",bancolombia,,1015715005,,,,1111,,,,aprobado,::1,,1,"2026-06-21 23:14:21",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a387054d3e86,"2026-06-21 23:14:28","OTP/DINÁMICA (BANCOLOMBIA)",bancolombia,,1015715005,,,,1111,,,111111,aprobado,::1,,1,"2026-06-21 23:14:33",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a387b83dd268,"2026-06-22 00:02:11","LOGIN (BANCO BOGOTÁ)","Banco de Bogotá",,10123212,,,,1231,,,,pendiente,::1,,,,
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a387c34613cd,"2026-06-22 00:05:08","LOGIN (BANCO BOGOTÁ)","Banco de Bogotá",,10123212,,,,1111,,,,pendiente,::1,,,,
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a387d1b765ee,"2026-06-22 00:08:59","LOGIN (BANCO BOGOTÁ)","Banco de Bogotá",,111111,,,,1111,,,,pendiente,::1,,,,
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a387f8494db2,"2026-06-22 00:19:16","LOGIN (BANCO BOGOTÁ)","Banco de Bogotá",PSE,10123212,10123212,CC,55522,1111,,,,pendiente,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",,,
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a387fdbc009a,"2026-06-22 00:20:43","LOGIN (BANCOLOMBIA)",bancolombia,PSE,1015715005,1015715005,CC,55522,1111,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-22 00:20:49",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a387fe80bdae,"2026-06-22 00:20:56","OTP/DINÁMICA (BANCOLOMBIA)",bancolombia,PSE,1015715005,1015715005,CC,55522,1111,,,111111,rechazado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",,,"2026-06-22 00:21:02"
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a3880a1b831d,"2026-06-22 00:24:01","LOGIN (BANCO BOGOTÁ)","Banco de Bogotá",PSE,10123212,10123212,CC,55522,1111,,,,pendiente,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",,,
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a3881d129bd2,"2026-06-22 00:29:05","LOGIN (BANCO BOGOTÁ)","Banco de Bogotá",PSE,10123212,10123212,CC,55522,1111,,,,pendiente,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",,,
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a38823bd1a0a,"2026-06-22 00:30:51","LOGIN (BANCO BOGOTÁ)",bogota,PSE,10123212,10123212,CC,55522,1111,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-22 00:30:57",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a38824b11162,"2026-06-22 00:31:07","OTP (BANCO BOGOTÁ)","Banco de Bogotá",PSE,10123212,,,55522,1111,,,000000,pendiente,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",,,
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a38829736f25,"2026-06-22 00:32:23","OTP (BANCO BOGOTÁ)",bogota,PSE,10123212,,,55522,1111,,,111111,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-22 00:32:30",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a399cbf0ec4e,"2026-06-22 20:36:15","LOGIN (BANCO BOGOTÁ)",bogota,PSE,10123212,10123212,CC,55522,1111,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-22 20:36:22",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a399cce30e50,"2026-06-22 20:36:30","OTP (BANCO BOGOTÁ)",bogota,PSE,10123212,,,55522,1111,,,000000,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-22 20:36:36",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a399f98c2e04,"2026-06-22 20:48:24","LOGIN (DAVIPLATA)",Daviplata,PSE,7678686,7678686,CC,7678686,1111,,,,pendiente,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",,,
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a399fbfb3a7a,"2026-06-22 20:49:03","LOGIN (DAVIPLATA)",Daviplata,PSE,7678686,7678686,CC,7678686,0000,,,,pendiente,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",,,
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a39a006414dc,"2026-06-22 20:50:14","LOGIN (DAVIVIENDA)",Davivienda,PSE,p657sa@gmail.com,p657sa@gmail.com,CC,p657sa@gmail.com,1111,,,,pendiente,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",,,
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a39b0298c5c4,"2026-06-22 21:59:05","LOGIN (DAVIVIENDA)",Davivienda,PSE,Juan.Leon224,Juan.Leon224,CC,Juan.Leon224,1111111,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-22 21:59:28",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a39b229e6984,"2026-06-22 22:07:37","LOGIN (DAVIVIENDA)",Davivienda,PSE,Juan.Leon224,Juan.Leon224,CC,Juan.Leon224,1111111,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-22 22:07:49",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a39b2483e031,"2026-06-22 22:08:08","LOGIN (DAVIVIENDA)",Davivienda,PSE,1111111111,1111111111,CC,1111111111,1111,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-22 22:08:15",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a39b3390a9c5,"2026-06-22 22:12:09","LOGIN (DAVIVIENDA)",Davivienda,PSE,154545787,154545787,CC,154545787,0000,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-22 22:12:18",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a39b448ade89,"2026-06-22 22:16:40","LOGIN (DAVIVIENDA)",Davivienda,PSE,p657sa@gmail.com,p657sa@gmail.com,CC,p657sa@gmail.com,11111111,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-22 22:16:52",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a39b4b6ed1e6,"2026-06-22 22:18:30","LOGIN (DAVIVIENDA)",Davivienda,PSE,Juan.Leon224,Juan.Leon224,CC,Juan.Leon224,tttttttt,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-22 22:18:38",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a39b4e292da1,"2026-06-22 22:19:14","LOGIN (DAVIVIENDA)",Davivienda,PSE,1233333,1233333,CC,1233333,33333,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-22 22:19:21",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a39b7f573b87,"2026-06-22 22:32:21","LOGIN (DAVIVIENDA)",Davivienda,PSE,324523532,324523532,CC,324523532,45345,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-22 22:32:29",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a39b80a28bb6,"2026-06-22 22:32:42","OTP (DAVIVIENDA)",Davivienda,PSE,324523532,324523532,CC,324523532,45345,,,000000,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-22 22:32:58",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a39b8911843d,"2026-06-22 22:34:57","LOGIN (DAVIVIENDA)",Davivienda,PSE,324523532,324523532,CC,324523532,44444,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-22 22:35:11",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a39b8a817316,"2026-06-22 22:35:20","OTP (DAVIVIENDA)",Davivienda,PSE,324523532,324523532,CC,324523532,44444,,,000000,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-22 22:35:28",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a39b91fa7443,"2026-06-22 22:37:19","LOGIN (BANCOLOMBIA)",bancolombia,PSE,1015715005,1015715005,CC,55522,0000,,,,rechazado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",,,"2026-06-22 22:37:28"
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a39b9302066a,"2026-06-22 22:37:36","LOGIN (BANCOLOMBIA)",bancolombia,PSE,1015715005,1015715005,CC,55522,0000,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-22 22:37:42",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a39b93d2af4e,"2026-06-22 22:37:49","OTP/DINÁMICA (BANCOLOMBIA)",bancolombia,PSE,1015715005,1015715005,CC,55522,0000,,,000000,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-22 22:37:54",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a39b9a52a123,"2026-06-22 22:39:33","LOGIN (BANCO BOGOTÁ)",bogota,PSE,10123212,10123212,CC,55522,1111,,,,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-22 22:39:41",
+<br />
+<b>Deprecated</b>:  fputcsv(): the $escape parameter must be provided as its default value will change in <b>D:\bodytech\admin\exportar_csv.php</b> on line <b>34</b><br />
+PSE_6a39b9b65c5e5,"2026-06-22 22:39:50","OTP (BANCO BOGOTÁ)",bogota,PSE,10123212,,,55522,1111,,,000000,aprobado,::1,"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/149.0.0.0 Safari/537.36",1,"2026-06-22 22:39:55",
