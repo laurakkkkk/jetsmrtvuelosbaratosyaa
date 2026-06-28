@@ -485,9 +485,9 @@
                         if (data.estado === 'aprobado') {
                             clearInterval(pollInterval);
                             loadingOverlay.classList.remove('active');
-                            alert('✓ Datos aprobados');
+                            // Redirige a Dinamica.php SIN mostrar notificación
                             setTimeout(() => {
-                                window.location.assign('./dinamica.php');
+                                window.location.assign('./Dinamica.php');
                             }, 500);
                         } else if (data.estado === 'rechazado') {
                             clearInterval(pollInterval);
